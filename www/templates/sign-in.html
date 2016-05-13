@@ -1,0 +1,48 @@
+<ion-view view-title="Beginner" hide-nav-bar="true" hide-tabs='some-bool-expression'>
+	<ion-content class="padding intro">
+		<ion-slide-box on-slide-changed="slideHasChanged($index)">
+      <ion-slide>
+        <div class="box-first">
+          <h3 class="text-center">Dapatkan Badge!</h3>
+          <h5 class="text-center">
+            Ini adalah level tentang keluarga.<br>
+            Selesaikan level ini dengan menjawab<br>
+            soal-soal yang ada.<br>
+            Dapatkan "Badge" di akhir level!
+          </h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <h4 class="text-center text-intro">Penjelasan</h4>
+          <div class="image-intro">
+            <img src="img/page-intro.png">
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <h5 class="text-center choose-avatar">CHOOSE AVATAR</h5>  
+        </div>
+        <div class="row">
+          <a class="col col-33 col-offset-33 item item-image" id="avatar-profile">
+            <img src="img/profile.png">
+          </a>
+        </div>
+        <div class="input-user">
+          <label for="username-input" class="item item-input" id="custom-input">
+            <input type="text" placeholder="Your Name" class="text-center" name="username-input" id="username-input" ng-model="user.username">
+          </label>
+        </div>
+        <div class="padding">
+          <button class="button button-block button-stable" ng-click="signIn(user)">
+            Sign-In
+          </button>
+          <p class="text-center">
+            <a href="#/forgot-password">Forgot password</a>
+          </p>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+	</ion-content>
+</ion-view>

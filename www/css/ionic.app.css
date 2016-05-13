@@ -946,8 +946,7 @@ ul .custom-nav {
   margin-left: 289px; }
 
 .slider {
-  height: 100%;
-  background-color: #47bbbb; }
+  height: 100%; }
 
 .slider-pager-page {
   color: #4c4c4c !important; }
@@ -955,8 +954,32 @@ ul .custom-nav {
 .slider-pager-page.active {
   color: white !important; }
 
+.content-intro {
+  background-color: #fdb15e; }
+
 .intro {
   background-color: #47bbbb; }
+
+#custom-input-signin {
+  width: 200px;
+  margin: 0 auto;
+  background-color: #47bbbb; }
+
+.input-user *::-webkit-input-placeholder {
+  color: white !important; }
+
+.input-user *:-moz-placeholder {
+  color: white !important; }
+
+.input-user *:-ms-input-placeholder {
+  /* IE10+ */
+  color: white !important; }
+
+.input-user label {
+  background-color: #47bbbb; }
+
+.choose-avatar {
+  color: white; }
 
 .image-intro {
   text-align: center; }

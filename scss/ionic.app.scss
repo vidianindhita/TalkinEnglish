@@ -1443,7 +1443,6 @@ ul .custom-nav {
 
 .slider {
 	height: 100%;
-	background-color: $positive;
 }
 
 .slider-pager-page {
@@ -1454,8 +1453,38 @@ ul .custom-nav {
   color: white !important;
 }
 
+.content-intro {
+	background-color: $energized;
+}
+
 .intro {
 	background-color: $positive;
+}
+
+#custom-input-signin {
+	width: 200px;
+	margin: 0 auto;
+	background-color: $positive;
+}
+
+.input-user {
+	*::-webkit-input-placeholder {
+	  color: white !important;
+	}
+	*:-moz-placeholder {
+	  color: white !important;
+	}
+	*:-ms-input-placeholder { /* IE10+ */
+	  color: white !important;
+	}
+
+	label {
+		background-color: $positive;
+	}
+}
+
+.choose-avatar {
+	color: white;
 }
 
 .image-intro {

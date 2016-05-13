@@ -1,5 +1,5 @@
 <ion-view view-title="Beginner" hide-nav-bar="true" hide-tabs='some-bool-expression'>
-	<ion-content class="padding intro">
+	<ion-content class="padding content-intro">
 		<ion-slide-box on-slide-changed="slideHasChanged($index)">
       <ion-slide>
         <div class="box-first">
@@ -31,50 +31,3 @@
     </ion-slide-box>
 	</ion-content>
 </ion-view>
-
-<script id="my-modal.html" type="text/ng-template">
-  <ion-modal-view class="ion-nifty-modal fade-in-scale">
-    <div class="ion-modal-content-custom">
-      <ion-content class="padding">
-        <div class="close-modal">
-          <a class="icon ion-android-close close-button-modal" ng-click="closeModal()"></a>
-        </div>
-        <div class="video-sl text-center">
-          <img src="video/ibu_sl.gif">
-        </div>
-      </ion-content>
-    </div>
-  </ion-modal-view>
-</script>
-
-<script id="my-modal-score.html" type="text/ng-template">
-  <ion-modal-view class="ion-nifty-modal modal-score fade-in-scale">
-    <div class="ion-modal-content-custom">
-      <ion-content class="padding custom-modal-content">
-      	<div class="close-modal-button">
-      		<button class="button button-clear button-small" ng-click="closeModalScore()">
-      			<i class="ion-android-close"></i>
-      		</button>
-      	</div>
-      	<h4 class="text-center">Your score is</h4>
-        <h1 class="text-center">0</h1>
-      </ion-content>
-    </div>
-  </ion-modal-view>
-</script>
-
-<script id="my-modal-level.html" type="text/ng-template">
-  <ion-modal-view class="ion-nifty-modal fade-in-scale">
-    <div class="ion-modal-content-custom">
-      <ion-content class="padding custom-modal-content">
-      	<div class="close-modal-button">
-      		<button class="button button-clear button-small" ng-click="closeModalLevel()">
-      			<i class="ion-android-close"></i>
-      		</button>
-       	</div>
-       	<img src="img/home-icon.png">
-       	<h5 class="text-center">You are in Basic Level</h5>
-      </ion-content>
-    </div>
-  </ion-modal-view>
-</script>
