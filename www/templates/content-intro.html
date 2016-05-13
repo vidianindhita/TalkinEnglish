@@ -1,32 +1,34 @@
 <ion-view view-title="Beginner" hide-nav-bar="true" hide-tabs='some-bool-expression'>
-	<ion-content class="padding">
-		<div class="row" id="status-bar-level">
-			<a class="icon ion-android-close close-button" ng-href="#/tab/beginner"></a>
-			<progress max="100" value="32"></progress>
-		</div>
-		<div class="row">
-			<div id="score-0">
-				<div class="button button-outline circle-score button-energized button-small" ng-click="openModalScore()" ng-controller='ModalScoreCtrl'>
-					<p>{{score}}</p>
-				</div>
-			</div>
-		</div>
-		<div class="row" id="score-1-fam8">
-			<h3>He is a father</h3>
-			<button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
-				<img src="img/home-icon.png">
-			</button>
-		</div>
-		<div class="sub-word">
-			<h5>Dia adalah seorang ayah</h5>
-			<button ng-click="openModal()" ng-controller='ModalCtrl' class="button-clear"><img src="img/sign-button.png"></button>
-		</div>
-		<div class="lip-reading-vid">
-			<img src="img/lip-reading1.png">
-		</div>
-		<div class="button-next">
-			<a class="button button-block button-balanced" ng-href="#/tab/family-9">NEXT  <i class="ion-ios-arrow-forward"></i></a>
-		</div>
+	<ion-content class="padding intro">
+		<ion-slide-box on-slide-changed="slideHasChanged($index)">
+      <ion-slide>
+        <div class="box-first">
+          <h3 class="text-center">Dapatkan Badge!</h3>
+          <h5 class="text-center">
+            Ini adalah level tentang keluarga.<br>
+            Selesaikan level ini dengan menjawab<br>
+            soal-soal yang ada.<br>
+            Dapatkan "Badge" di akhir level!
+          </h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <h4 class="text-center text-intro">Penjelasan</h4>
+          <div class="image-intro">
+            <img src="img/page-intro.png">
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="box-third">
+          <h3 class="text-center">Saya mengerti!</h3>
+        </div>
+        <div class="button-next">
+          <a class="button button-block button-stable" ng-href="#/tab/family-1">Let's Start  <i class="ion-ios-arrow-forward"></i></a>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
 	</ion-content>
 </ion-view>
 
@@ -34,11 +36,11 @@
   <ion-modal-view class="ion-nifty-modal fade-in-scale">
     <div class="ion-modal-content-custom">
       <ion-content class="padding">
-      	<div class="close-modal">
+        <div class="close-modal">
           <a class="icon ion-android-close close-button-modal" ng-click="closeModal()"></a>
         </div>
         <div class="video-sl text-center">
-          <img src="video/dia_ayah_sl.gif">
+          <img src="video/ibu_sl.gif">
         </div>
       </ion-content>
     </div>
@@ -55,7 +57,7 @@
       		</button>
       	</div>
       	<h4 class="text-center">Your score is</h4>
-        <h1 class="text-center">{{score}}</h1>
+        <h1 class="text-center">0</h1>
       </ion-content>
     </div>
   </ion-modal-view>

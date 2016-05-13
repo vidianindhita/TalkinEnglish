@@ -680,10 +680,10 @@ ul .custom-nav {
   border-radius: 10px; }
 
 .ion-nifty-modal .ion-modal-content-custom .scroll-content {
-  background-color: white; }
+  background-color: #000; }
 
 .custom-modal-content h4 {
-  color: #4c4c4c;
+  color: #f8f8f8;
   margin-top: 40px; }
 
 .custom-modal-content h1 {
@@ -691,7 +691,7 @@ ul .custom-nav {
   font-size: 65px; }
 
 .custom-modal-content h5 {
-  color: #4c4c4c;
+  color: #f8f8f8;
   font-size: 18px; }
 
 .custom-modal-content img {
@@ -936,6 +936,49 @@ ul .custom-nav {
       height: 130px; }
   .finish .button-next {
     color: #47bbbb; }
+
+.video-sl {
+  margin-top: 6px; }
+
+.close-button-modal {
+  font-size: 24px;
+  color: #fdb15e;
+  margin-left: 289px; }
+
+.slider {
+  height: 100%;
+  background-color: #47bbbb; }
+
+.slider-pager-page {
+  color: #4c4c4c !important; }
+
+.slider-pager-page.active {
+  color: white !important; }
+
+.intro {
+  background-color: #47bbbb; }
+
+.image-intro {
+  text-align: center; }
+  .image-intro img {
+    height: 460px;
+    width: 300px; }
+
+.text-intro {
+  color: white; }
+
+.box-first h3 {
+  padding-top: 200px;
+  color: white; }
+
+.box-first h5 {
+  color: white;
+  margin-top: 25px; }
+
+.box-third h3 {
+  padding-top: 200px;
+  margin-bottom: 200px;
+  color: white; }
 
 /*!
   Ionicons, v2.0.1

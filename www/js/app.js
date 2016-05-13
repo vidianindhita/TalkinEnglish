@@ -61,6 +61,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     })
 
+      .state('tab.content-intro', {
+        url: '/content-intro',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/content-intro.html'
+          }
+        }
+      })
+
       .state('tab.family-1', {
         url: '/family-1',
         views: {

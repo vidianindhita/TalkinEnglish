@@ -1047,14 +1047,14 @@ ul .custom-nav {
 	.ion-modal-content-custom {
 
 		.scroll-content {
-			background-color: white;
+			background-color: #000;
 		}
 	}
 }
 
 .custom-modal-content {
 	h4 {
-		color: $dark;
+		color: $stable;
 		margin-top: 40px;
 	}
 
@@ -1064,7 +1064,7 @@ ul .custom-nav {
 	}
 
 	h5 {
-		color: $dark;
+		color: $stable;
 		font-size: 18px;
 	}
 
@@ -1429,6 +1429,66 @@ ul .custom-nav {
 	}
 }
 
+.video-sl {
+
+	margin-top: 6px;
+
+}
+
+.close-button-modal {
+	font-size: 24px;
+	color: $energized;
+	margin-left: 289px;
+}
+
+.slider {
+	height: 100%;
+	background-color: $positive;
+}
+
+.slider-pager-page {
+  color: $dark !important;
+}
+
+.slider-pager-page.active {
+  color: white !important;
+}
+
+.intro {
+	background-color: $positive;
+}
+
+.image-intro {
+	img {
+		height: 460px;
+		width: 300px;
+	}
+	text-align: center;
+}
+
+.text-intro {
+	color: white;
+}
+
+.box-first {
+	h3 {
+		padding-top: 200px;
+		color: white;
+	}
+
+	h5 {
+		color: white;
+		margin-top: 25px;
+	}
+}
+
+.box-third {
+	h3 {
+		padding-top: 200px;
+		margin-bottom: 200px;
+		color: white;
+	}
+}
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";

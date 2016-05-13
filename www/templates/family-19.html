@@ -50,7 +50,7 @@
 			</div>
 		</div>
 		<div class="sub-word">
-			<h5>Adik saya sedang menonton TV sekarang</h5>
+			<h5>Saudara laki-laki saya sedang menonton TV</h5>
 			<button ng-click="openModal()" ng-controller='ModalCtrl' class="button-clear"><img src="img/sign-button.png"></button>
 		</div>
 		<div id="fam6-content">
@@ -95,8 +95,12 @@
   <ion-modal-view class="ion-nifty-modal fade-in-scale">
     <div class="ion-modal-content-custom">
       <ion-content class="padding">
-      	<h3>Video Here</h3>
-        <button class="button button-full button-positive" ng-click="closeModal()">Close Modal</button>
+      	<div class="close-modal">
+          <a class="icon ion-android-close close-button-modal" ng-click="closeModal()"></a>
+        </div>
+        <div class="video-sl text-center">
+          <img src="video/saudara_tonton_tv_sl.gif">
+        </div>
       </ion-content>
     </div>
   </ion-modal-view>
