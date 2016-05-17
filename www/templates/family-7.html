@@ -23,8 +23,14 @@
 			<h5>Dia adalah seorang ibu</h5>
 			<button ng-click="openModal()" ng-controller='ModalCtrl' class="button-clear"><img src="img/sign-button.png"></button>
 		</div>
-		<div id="fam7-content">
-			<p>Spell the word! Type the answer below.</p>		
+		<div class="sub-word" id="fam-7">
+			<h5>Type the right word</h5>
+			<div class="row translate-help">
+				<div class="button button-small circle-button button-positive" ng-click="showDiv = !showDiv">?</div>
+				<div ng-show="showDiv" class="cssSlideUp">
+			    	<p>Tuliskan kata yang tepat</p>
+				</div>
+			</div>
 		</div>
 		<div>
 			<label class="item item-input" id="custom-input-answer">

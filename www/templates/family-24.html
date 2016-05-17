@@ -19,32 +19,38 @@
 				</button>
 			</div>
 		</div>
-		<div id="fam11-content">
-			<p>What is the picture above?</p>		
+		<div class="sub-word" id="fam-24">
+			<h5>What is the picture above?</h5>
+			<div class="row translate-help">
+				<div class="button button-small circle-button button-positive" ng-click="showDiv = !showDiv">?</div>
+				<div ng-show="showDiv" class="cssSlideUp">
+			    <p>Foto apa di atas?</p>
+				</div>
+			</div>
 		</div>
 
 		<!-- Selectable Answer -->
 		<div class="row" radio-group id="cards-choice-1">
 			<div class="col col-50">
 				<ion-radio class="card" id="card-a-fam23" icon="ion-checkmark" ng-model="radioValue" name="choiceId" value="Brother">
-					<img src="img/son-lipread.png">
+					<img src="video/brother.gif">
 				</ion-radio>
 			</div>
 			<div class="col col-50">
 				<ion-radio class="card" id="card-b-fam23" icon="ion-checkmark" ng-model="radioValue" name="choiceId" value="Mother">
-					<img src="img/mother-lipread.png">
+					<img src="video/mother.gif">
 				</ion-radio>
 			</div>
 		</div>
 		<div class="row" radio-group>
 			<div class="col col-50">
 				<ion-radio class="card" id="card-c-fam23" icon="ion-checkmark" ng-model="radioValue" name="choiceId" value="Father">
-					<img src="img/father-lipread.png">
+					<img src="video/father.gif">
 				</ion-radio>
 			</div>
 			<div class="col col-50">
 				<ion-radio class="card" id="card-d-fam23" icon="ion-checkmark" ng-model="radioValue" name="choiceId" value="Sister">
-					<img src="img/daughter-lipread.png">
+					<img src="video/sister.gif">
 				</ion-radio>
 			</div>
 		</div>

@@ -13,14 +13,20 @@
 		</div>
 		<div ng-switch="content">
 			<div class="row" ng-switch-default id="score-1-fam11">
-				<img src="img/lip-reading2.png" id="img-lipread">	
+				<img src="video/watch.gif" id="img-lipread">	
 				<button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
 					<img src="img/home-icon.png">
 				</button>
 			</div>
 		</div>
-		<div id="fam11-content">
-			<p>What is the translation?</p>		
+		<div class="sub-word" id="fam-20">
+			<h5>What is the pronunciation about?</h5>
+			<div class="row translate-help">
+				<div class="button button-small circle-button button-positive" ng-click="showDiv = !showDiv">?</div>
+				<div ng-show="showDiv" class="cssSlideUp">
+			    <p>Apa kalimat yang diucapkan?</p>
+				</div>
+			</div>
 		</div>
 
 		<!-- Selectable Answer -->

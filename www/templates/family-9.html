@@ -53,8 +53,14 @@
 			<h5>Dia adalah seorang ayah</h5>
 			<button ng-click="openModal()" ng-controller='ModalCtrl' class="button-clear"><img src="img/sign-button.png"></button>
 		</div>
-		<div id="fam6-content">
-			<p>Choose the right word</p>		
+		<div class="sub-word" id="fam-9">
+			<h5>Choose the right word</h5>
+			<div class="row translate-help">
+				<div class="button button-small circle-button button-positive" ng-click="showDiv = !showDiv">?</div>
+				<div ng-show="showDiv" class="cssSlideUp">
+			    	<p>Pilih kata yang tepat</p>
+				</div>
+			</div>
 		</div>
 		<div class="row radio-answer" radio-group>
 			<label class="col item item-radio" id="answer-fam6-1">

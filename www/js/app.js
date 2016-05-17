@@ -129,7 +129,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         url: '/family-6',
         views: {
           'tab-dash': {
-            templateUrl: 'templates/family-6.html'
+            templateUrl: 'templates/family-6.html',
+            controller: 'SwitchCtrl'
           }
         }
       })

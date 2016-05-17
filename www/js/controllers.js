@@ -9,13 +9,18 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('DashCtrl', function($scope, $state) {
+.controller('DashCtrl', function($scope, $state, $rootScope) {
+  $rootScope.hideTabs = '';
   $scope.swipechats = function(){
     $state.go('tab.chats');
   };
 })
 
-.controller('FamilyCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+.controller('FamilyCtrl', function($scope, $state, $location, $ionicPopup, $rootScope, $sce) {
+  $scope.sources = [
+    {src: $sce.trustAsResourceUrl("/video/mother.mov"), type: "video/mov"}
+  ]
+
   $scope.showAlert = function() {
     $scope.data = {}
     var ans = $scope.radioValue
@@ -107,7 +112,12 @@ angular.module('starter.controllers', [])
   $scope.score = $rootScope.value;
 })
 
-.controller('ChatsCtrl', function($scope, $state) {
+.controller('FamilySixCtrl', function($scope, $rootScope) {
+  $scope.score = $rootScope.value;
+})
+
+.controller('ChatsCtrl', function($scope, $state, $rootScope) {
+  $scope.score = $rootScope.value;
   console.log('oochats')
   $scope.swipedash = function(){
     $state.go('tab.dash');

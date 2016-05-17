@@ -3,44 +3,57 @@
 		<ion-slide-box on-slide-changed="slideHasChanged($index)">
       <ion-slide>
         <div class="box-first">
-          <h3 class="text-center">Dapatkan Badge!</h3>
+          <h3 class="text-center" id="welcome-text">Welcome!</h3>
+          <div class="row">
+            <a class="col col-33 col-offset-33 item item-image" id="welcome-1">
+              <img src="img/book-open.png">
+            </a>
+          </div>
+          <h4 class="text-center">Learn</h4>
           <h5 class="text-center">
-            Ini adalah level tentang keluarga.<br>
-            Selesaikan level ini dengan menjawab<br>
-            soal-soal yang ada.<br>
-            Dapatkan "Badge" di akhir level!
+            Belajar bahasa Inggris dengan mudah.<br>
+            Dengan aplikasi ini kamu akan<br>
+            belajar bahasa Inggris sehari-hari<br>
+            sehingga dapat melatih komunikasi.
           </h5>
         </div>
       </ion-slide>
       <ion-slide>
-        <div>
-          <h4 class="text-center text-intro">Penjelasan</h4>
-          <div class="image-intro">
-            <img src="img/page-intro.png">
+        <div class="box-first">
+          <h3 class="text-center" id="welcome-text-2">Welcome!</h3>
+          <div class="row">
+            <a class="col col-33 col-offset-33 item item-image" id="welcome-2">
+              <img src="img/play.png">
+            </a>
           </div>
+          <h4 class="text-center">Play</h4>
+          <h5 class="text-center">
+            Belajar dengan permainan.<br>
+            Dengan aplikasi ini kamu belajar<br>
+            sambil bermain. Selesaikan soal-soal<br>
+            agar kamu mendapatkan nilai tinggi.
+          </h5>
         </div>
       </ion-slide>
       <ion-slide>
-        <div>
-          <h5 class="text-center choose-avatar">CHOOSE AVATAR</h5>  
+        <div class="box-first">
+          <h3 class="text-center" id="welcome-text-3">Ready?</h3>
+          <h4 class="text-center input-avatar">Input your name!</h4>  
         </div>
         <div class="row">
-          <a class="col col-33 col-offset-33 item item-image" id="avatar-profile">
-            <img src="img/profile.png">
+          <a class="col col-33 col-offset-33 item item-image" id="avatar-intro">
+            <img src="img/avatar-intro.png">
           </a>
         </div>
         <div class="input-user">
-          <label for="username-input" class="item item-input" id="custom-input">
+          <label for="username-input" class="item item-input" id="custom-input-signin">
             <input type="text" placeholder="Your Name" class="text-center" name="username-input" id="username-input" ng-model="user.username">
           </label>
         </div>
         <div class="padding">
           <button class="button button-block button-stable" ng-click="signIn(user)">
-            Sign-In
+            START <i class="ion-ios-arrow-forward"></i>
           </button>
-          <p class="text-center">
-            <a href="#/forgot-password">Forgot password</a>
-          </p>
         </div>
       </ion-slide>
     </ion-slide-box>
