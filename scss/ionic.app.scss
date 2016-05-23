@@ -19,12 +19,69 @@ $dark:                            #444 !default;
 
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
-$stable:						  						#f8f8f8 !default;
+$stable:						  #f8f8f8 !default;
 $positive:                        #47bbbb !default;
 $balanced:                        #51b860 !default;
 $energized:                       #fdb15e !default;
 $assertive:                       #e85a59 !default;
-$dark:							  						#4c4c4c !default;
+$dark:							  #4c4c4c !default;
+
+@font-face {
+  font-family: 'Moon Flower';
+  src: url('../lib/ionic/fonts/Moon Flower.eot');
+  src: url('../lib/ionic/fonts/Moon Flower.woff2') format('woff2'),
+       url('../lib/ionic/fonts/Moon Flower.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MoonFlower';
+  src: url('../lib/ionic/fonts/MoonFlower.woff') format('woff'),
+       url('../lib/ionic/fonts/MoonFlower.ttf') format('truetype'),
+       url('../lib/ionic/fonts/MoonFlower.svg#MoonFlower') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Moon Flower Bold';
+  src: url('Moon Flower Bold.eot');
+  src: url('Moon Flower Bold.woff2') format('woff2'),
+       url('Moon Flower Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MoonFlowerBold';
+  src: url('MoonFlowerBold.woff') format('woff'),
+       url('MoonFlowerBold.ttf') format('truetype'),
+       url('MoonFlowerBold.svg#MoonFlowerBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title-text {
+	font-family: 'Moon Flower Bold';
+}
+
+.text-green {
+	color: $balanced;
+}
+
+.text-yellow {
+	color: $energized;
+}
+
+.text-red {
+	color: $assertive;
+}
+
+#title-top {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
 
 .ion-android-arrow-back {
 	font-size: 10px;
@@ -194,6 +251,18 @@ $dark:							  						#4c4c4c !default;
 	}
 }
 
+#sublevel-intermediate-1, #sublevel-intermediate-2, #sublevel-intermediate-3, #sublevel-intermediate-4, #sublevel-intermediate-5, #sublevel-intermediate-6, #sublevel-intermediate-7 {
+	border-width: 0px;
+
+	img {
+		width: 80px;
+	}
+
+	p {
+		color: $energized;
+	}
+}
+
 #avatar-profile {
 	border-width: 0px;
 	padding-top: 25px;
@@ -282,6 +351,36 @@ ul .custom-nav {
 	}
 }
 
+#status-bar-level-intermediate {
+	padding-bottom: 0px;
+
+	progress[value] {
+	  width: 299px;
+	  height: 3px;
+	  -webkit-appearance: none;
+	  appearance: none;
+	  margin-top: 11px;
+	}
+
+	progress[value]::-webkit-progress-bar {
+		width: 299px;
+	  height: 3px;
+		background-color: $stable;
+	}
+
+	progress[value]::-webkit-progress-value {
+		width: 299px;
+	  height: 3px;
+		background-color: $energized;  
+	}
+
+	progress[value]::-moz-progress-bar {
+		width: 299px;
+	  height: 3px;
+		background-color: $stable;
+	}
+}
+
 #score-0 {
 	.circle-score {
 		color: $energized;
@@ -310,14 +409,14 @@ ul .custom-nav {
 	padding-bottom: 0px;
 	
 	img {
-		margin-left: 191px;
+		margin-left: 26px;
 		width: 40px;
 		height: 40px;
 	}
 
-	h3 {
+	h3, h4 {
 		color: $assertive;
-		margin-left: 10px;
+		margin-left: 7px;
 	}
 }
 
@@ -326,14 +425,14 @@ ul .custom-nav {
 	padding-bottom: 0px;
 	
 	img {
-		margin-left: 280px;
+		margin-left: 24px;
 		width: 40px;
 		height: 40px;
 	}
 
 	h3 {
 		color: $assertive;
-		margin-left: 10px;
+		margin-left: 7px;
 	}
 }
 
@@ -342,14 +441,14 @@ ul .custom-nav {
 	padding-bottom: 0px;
 	
 	img {
-		margin-left: 198px;
+		margin-left: 24px;
 		width: 40px;
 		height: 40px;
 	}
 
 	h3 {
 		color: $assertive;
-		margin-left: 10px;
+		margin-left: 7px;
 	}
 }
 
@@ -369,7 +468,7 @@ ul .custom-nav {
 
 	h3 {
 		color: $assertive;
-		margin-left: 10px;
+		margin-left: 7px;
 	}
 }
 
@@ -382,14 +481,14 @@ ul .custom-nav {
 	}
 
 	img {
-		margin-left: 91px;
+		margin-left: 24px;
 		width: 40px;
 		height: 40px;
 	}
 
-	h3 {
+	h3, h4 {
 		color: $assertive;
-		margin-left: 10px;
+		margin-left: 7px;
 	}
 }
 
@@ -402,14 +501,14 @@ ul .custom-nav {
 	}
 	
 	img {
-		margin-left: 81px;
+		margin-left: 24px;
 		width: 40px;
 		height: 40px;
 	}
 
-	h3 {
+	h3, h4 {
 		color: $assertive;
-		margin-left: 10px;
+		margin-left: 7px;
 	}
 }
 
@@ -422,14 +521,14 @@ ul .custom-nav {
 	}
 	
 	img {
-		margin-left: 81px;
+		margin-left: 24px;
 		width: 40px;
 		height: 40px;
 	}
 
-	h3 {
+	h3, h4 {
 		color: $assertive;
-		margin-left: 10px;
+		margin-left: 7px;
 	}
 }
 
@@ -442,14 +541,14 @@ ul .custom-nav {
 	}
 
 	img {
-		margin-left: 97px;
+		margin-left: 24px;
 		width: 40px;
 		height: 40px;
 	}
 
-	h3 {
+	h3, h4 {
 		color: $assertive;
-		margin-left: 10px;
+		margin-left: 7px;
 	}
 }
 
@@ -462,14 +561,14 @@ ul .custom-nav {
 	}
 
 	img {
-		margin-left: 76px;
+		margin-left: 24px;
 		width: 40px;
 		height: 40px;
 	}
 
-	h3 {
+	h3, h4 {
 		color: $assertive;
-		margin-left: 10px;
+		margin-left: 7px;
 	}
 }
 
@@ -482,14 +581,14 @@ ul .custom-nav {
 	}
 
 	img {
-		margin-left: 101px;
+		margin-left: 24px;
 		width: 40px;
 		height: 40px;
 	}
 
-	h3 {
+	h3, h4 {
 		color: $assertive;
-		margin-left: 10px;
+		margin-left: 7px;
 	}
 }
 
@@ -682,7 +781,7 @@ ul .custom-nav {
 	}
 	
 	img {
-		margin-left: 28px;
+		margin-left: 24px;
 		width: 40px;
 		height: 40px;
 	}
@@ -693,9 +792,9 @@ ul .custom-nav {
 		margin-left: 11px;
 	}
 
-	h3 {
+	h3, h4 {
 		color: $assertive;
-		margin-left: 10px;
+		margin-left: 7px;
 	}
 }
 
@@ -1234,6 +1333,18 @@ ul .custom-nav {
 	}
 }
 
+// #card-a-fam11-school, #card-b-fam11-school, #card-c-fam11-school, #card-d-fam11-school {
+// 	height: 60px;
+// 	margin-top: 0px;
+// 	margin-bottom: 0px;
+
+// 	i {
+// 		padding-top: 3px;
+// 		padding-right: 8px;
+// 		color: $energized;
+// 	}
+// }
+
 #card-a-fam23, #card-b-fam23, #card-c-fam23, #card-d-fam23 {
 	height: 100px;
 	margin-top: 0px;
@@ -1307,7 +1418,11 @@ ul .custom-nav {
 		height: 40px;
 		border: 2px solid;
 		font-size: 14px;
-	}	
+	}
+
+	.button-switch {
+		font-size: 11px;
+	}
 }
 
 #answer-fam6-4 {
@@ -1350,6 +1465,10 @@ ul .custom-nav {
 		height: 40px;
 		border: 2px solid;
 		font-size: 14px;
+	}
+
+	.button-switch {
+		font-size: 11px;
 	}
 }
 
@@ -1450,7 +1569,7 @@ ul .custom-nav {
 			width: 80px;
 			height: 80px;
 		}
-		h3 {
+		h3, h4 {
 			color: $energized;
 		}
 	}
@@ -1460,7 +1579,7 @@ ul .custom-nav {
 			width: 120px;
 			height: 80px;
 		}
-		h3 {
+		h3, h4 {
 			color: $energized;
 		}
 	}
@@ -1625,7 +1744,7 @@ ul .custom-nav {
 }
 
 .box-first {
-	h3 {
+	h3, h1 {
 		padding-top: 0px;
 		color: white;
 	}
@@ -1649,7 +1768,7 @@ ul .custom-nav {
 }
 
 .box-third {
-	h3 {
+	h3, h1 {
 		padding-top: 10px;
 		margin-bottom: 100px;
 		color: white;

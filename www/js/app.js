@@ -336,6 +336,176 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       })
 
+    .state('tab.intermediate', {
+      url: '/intermediate',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/intermediate.html',
+          controller: 'IntermediateCtrl'
+        }
+      }
+    })
+
+      .state('tab.school-1', {
+        url: '/school-1',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-1.html',
+            controller: 'SchoolOneCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-2', {
+        url: '/school-2',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-2.html',
+            controller: 'SchoolTwoCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-3', {
+        url: '/school-3',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-3.html',
+            controller: 'SchoolThreeCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-4', {
+        url: '/school-4',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-4.html',
+            controller: 'SchoolFourCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-5', {
+        url: '/school-5',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-5.html',
+            controller: 'SchoolFiveCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-6', {
+        url: '/school-6',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-6.html',
+            controller: 'SchoolSixCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-7', {
+        url: '/school-7',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-7.html',
+            controller: 'SchoolSevenCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-8', {
+        url: '/school-8',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-8.html',
+            controller: 'SchoolEightCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-9', {
+        url: '/school-9',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-9.html',
+            controller: 'SchoolNineCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-10', {
+        url: '/school-10',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-10.html',
+            controller: 'SchoolTenCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-11', {
+        url: '/school-11',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-11.html',
+            controller: 'SchoolElevenCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-12', {
+        url: '/school-12',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-12.html',
+            controller: 'SchoolTwelveCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-13', {
+        url: '/school-13',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-13.html',
+            controller: 'SchoolThirteenCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-14', {
+        url: '/school-14',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-14.html',
+            controller: 'SchoolFourteenCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-15', {
+        url: '/school-15',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-15.html',
+            controller: 'SchoolFifteenCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-16', {
+        url: '/school-16',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-16.html',
+            controller: 'SchoolSixteenCtrl'
+          }
+        }
+      })
+
   .state('tab.chats', {
       url: '/chats',
       views: {

@@ -15,6 +15,48 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+@font-face {
+  font-family: 'Moon Flower';
+  src: url("../lib/ionic/fonts/Moon Flower.eot");
+  src: url("../lib/ionic/fonts/Moon Flower.woff2") format("woff2"), url("../lib/ionic/fonts/Moon Flower.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MoonFlower';
+  src: url("../lib/ionic/fonts/MoonFlower.woff") format("woff"), url("../lib/ionic/fonts/MoonFlower.ttf") format("truetype"), url("../lib/ionic/fonts/MoonFlower.svg#MoonFlower") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Moon Flower Bold';
+  src: url("Moon Flower Bold.eot");
+  src: url("Moon Flower Bold.woff2") format("woff2"), url("Moon Flower Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MoonFlowerBold';
+  src: url("MoonFlowerBold.woff") format("woff"), url("MoonFlowerBold.ttf") format("truetype"), url("MoonFlowerBold.svg#MoonFlowerBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.title-text {
+  font-family: 'Moon Flower Bold'; }
+
+.text-green {
+  color: #51b860; }
+
+.text-yellow {
+  color: #fdb15e; }
+
+.text-red {
+  color: #e85a59; }
+
+#title-top {
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
 .ion-android-arrow-back {
   font-size: 10px; }
 
@@ -127,6 +169,13 @@ $dark:                            #444 !default;
   #sublevel1 p, #sublevel2 p, #sublevel3 p, #sublevel4 p, #sublevel5 p, #sublevel6 p, #sublevel7 p {
     color: #51b860; }
 
+#sublevel-intermediate-1, #sublevel-intermediate-2, #sublevel-intermediate-3, #sublevel-intermediate-4, #sublevel-intermediate-5, #sublevel-intermediate-6, #sublevel-intermediate-7 {
+  border-width: 0px; }
+  #sublevel-intermediate-1 img, #sublevel-intermediate-2 img, #sublevel-intermediate-3 img, #sublevel-intermediate-4 img, #sublevel-intermediate-5 img, #sublevel-intermediate-6 img, #sublevel-intermediate-7 img {
+    width: 80px; }
+  #sublevel-intermediate-1 p, #sublevel-intermediate-2 p, #sublevel-intermediate-3 p, #sublevel-intermediate-4 p, #sublevel-intermediate-5 p, #sublevel-intermediate-6 p, #sublevel-intermediate-7 p {
+    color: #fdb15e; }
+
 #avatar-profile {
   border-width: 0px;
   padding-top: 25px; }
@@ -190,6 +239,27 @@ ul .custom-nav {
     height: 3px;
     background-color: #f8f8f8; }
 
+#status-bar-level-intermediate {
+  padding-bottom: 0px; }
+  #status-bar-level-intermediate progress[value] {
+    width: 299px;
+    height: 3px;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 11px; }
+  #status-bar-level-intermediate progress[value]::-webkit-progress-bar {
+    width: 299px;
+    height: 3px;
+    background-color: #f8f8f8; }
+  #status-bar-level-intermediate progress[value]::-webkit-progress-value {
+    width: 299px;
+    height: 3px;
+    background-color: #fdb15e; }
+  #status-bar-level-intermediate progress[value]::-moz-progress-bar {
+    width: 299px;
+    height: 3px;
+    background-color: #f8f8f8; }
+
 #score-0 .circle-score {
   color: #fdb15e;
   font-weight: bold;
@@ -211,32 +281,32 @@ ul .custom-nav {
 #score-1 {
   padding-bottom: 0px; }
   #score-1 img {
-    margin-left: 191px;
+    margin-left: 26px;
     width: 40px;
     height: 40px; }
-  #score-1 h3 {
+  #score-1 h3, #score-1 h4 {
     color: #e85a59;
-    margin-left: 10px; }
+    margin-left: 7px; }
 
 #score-1-fam2 {
   padding-bottom: 0px; }
   #score-1-fam2 img {
-    margin-left: 280px;
+    margin-left: 24px;
     width: 40px;
     height: 40px; }
   #score-1-fam2 h3 {
     color: #e85a59;
-    margin-left: 10px; }
+    margin-left: 7px; }
 
 #score-1-fam3 {
   padding-bottom: 0px; }
   #score-1-fam3 img {
-    margin-left: 198px;
+    margin-left: 24px;
     width: 40px;
     height: 40px; }
   #score-1-fam3 h3 {
     color: #e85a59;
-    margin-left: 10px; }
+    margin-left: 7px; }
 
 #score-1-fam5 {
   padding-bottom: 0px; }
@@ -248,79 +318,79 @@ ul .custom-nav {
     height: 40px; }
   #score-1-fam5 h3 {
     color: #e85a59;
-    margin-left: 10px; }
+    margin-left: 7px; }
 
 #score-1-fam6 {
   padding-bottom: 0px; }
   #score-1-fam6 .button-clear {
     padding-right: 0px; }
   #score-1-fam6 img {
-    margin-left: 91px;
+    margin-left: 24px;
     width: 40px;
     height: 40px; }
-  #score-1-fam6 h3 {
+  #score-1-fam6 h3, #score-1-fam6 h4 {
     color: #e85a59;
-    margin-left: 10px; }
+    margin-left: 7px; }
 
 #score-1-fam6a {
   padding-bottom: 0px; }
   #score-1-fam6a .button-clear {
     padding-right: 0px; }
   #score-1-fam6a img {
-    margin-left: 81px;
+    margin-left: 24px;
     width: 40px;
     height: 40px; }
-  #score-1-fam6a h3 {
+  #score-1-fam6a h3, #score-1-fam6a h4 {
     color: #e85a59;
-    margin-left: 10px; }
+    margin-left: 7px; }
 
 #score-1-fam6b {
   padding-bottom: 0px; }
   #score-1-fam6b .button-clear {
     padding-right: 0px; }
   #score-1-fam6b img {
-    margin-left: 81px;
+    margin-left: 24px;
     width: 40px;
     height: 40px; }
-  #score-1-fam6b h3 {
+  #score-1-fam6b h3, #score-1-fam6b h4 {
     color: #e85a59;
-    margin-left: 10px; }
+    margin-left: 7px; }
 
 #score-1-fam6c {
   padding-bottom: 0px; }
   #score-1-fam6c .button-clear {
     padding-right: 0px; }
   #score-1-fam6c img {
-    margin-left: 97px;
+    margin-left: 24px;
     width: 40px;
     height: 40px; }
-  #score-1-fam6c h3 {
+  #score-1-fam6c h3, #score-1-fam6c h4 {
     color: #e85a59;
-    margin-left: 10px; }
+    margin-left: 7px; }
 
 #score-1-fam6d {
   padding-bottom: 0px; }
   #score-1-fam6d .button-clear {
     padding-right: 0px; }
   #score-1-fam6d img {
-    margin-left: 76px;
+    margin-left: 24px;
     width: 40px;
     height: 40px; }
-  #score-1-fam6d h3 {
+  #score-1-fam6d h3, #score-1-fam6d h4 {
     color: #e85a59;
-    margin-left: 10px; }
+    margin-left: 7px; }
 
 #score-1-fam6e {
   padding-bottom: 0px; }
   #score-1-fam6e .button-clear {
     padding-right: 0px; }
   #score-1-fam6e img {
-    margin-left: 101px;
+    margin-left: 24px;
     width: 40px;
     height: 40px; }
-  #score-1-fam6e h3 {
+  #score-1-fam6e h3, #score-1-fam6e h4 {
     color: #e85a59;
-    margin-left: 10px; }
+    margin-left: 7px; }
 
 #score-1-fam7 {
   padding-bottom: 0px; }
@@ -435,16 +505,16 @@ ul .custom-nav {
   #score-1-fam11 .button-clear {
     padding-right: 0px; }
   #score-1-fam11 img {
-    margin-left: 28px;
+    margin-left: 24px;
     width: 40px;
     height: 40px; }
   #score-1-fam11 #img-lipread {
     width: 240px;
     height: 150px;
     margin-left: 11px; }
-  #score-1-fam11 h3 {
+  #score-1-fam11 h3, #score-1-fam11 h4 {
     color: #e85a59;
-    margin-left: 10px; }
+    margin-left: 7px; }
 
 #score-1-fam19 {
   padding-bottom: 0px; }
@@ -861,6 +931,8 @@ ul .custom-nav {
     height: 40px;
     border: 2px solid;
     font-size: 14px; }
+  #answer-fam6-1 .button-switch {
+    font-size: 11px; }
 
 #answer-fam6-4 {
   padding-left: 65px;
@@ -892,6 +964,8 @@ ul .custom-nav {
     height: 40px;
     border: 2px solid;
     font-size: 14px; }
+  #answer-fam6-2 .button-switch, #answer-fam6-3 .button-switch, #answer-fam6-4 .button-switch, #answer-fam6-5 .button-switch {
+    font-size: 11px; }
 
 #answer-fam7-1, #answer-fam7-2, #answer-fam7-3, #answer-fam7-4, #answer-fam7-5, #answer-fam7-6, #answer-fam7-7, #answer-fam7-8, #answer-fam7-9 {
   font-weight: bold; }
@@ -959,14 +1033,14 @@ ul .custom-nav {
   width: 80px;
   height: 80px; }
 
-.answer-popup-incorrect .image-incorrect h3 {
+.answer-popup-incorrect .image-incorrect h3, .answer-popup-incorrect .image-incorrect h4 {
   color: #fdb15e; }
 
 .answer-popup-incorrect .image-incorrect-review img {
   width: 120px;
   height: 80px; }
 
-.answer-popup-incorrect .image-incorrect-review h3 {
+.answer-popup-incorrect .image-incorrect-review h3, .answer-popup-incorrect .image-incorrect-review h4 {
   color: #fdb15e; }
 
 .background {
@@ -1076,7 +1150,7 @@ ul .custom-nav {
 .text-intro {
   color: white; }
 
-.box-first h3 {
+.box-first h3, .box-first h1 {
   padding-top: 0px;
   color: white; }
 
@@ -1093,7 +1167,7 @@ ul .custom-nav {
 .box-first .input-avatar {
   margin-top: 35px; }
 
-.box-third h3 {
+.box-third h3, .box-third h1 {
   padding-top: 10px;
   margin-bottom: 100px;
   color: white; }
