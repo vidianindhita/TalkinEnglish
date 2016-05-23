@@ -1,26 +1,57 @@
 angular.module('starter.controllers', [])
 
-.controller('SignInCtrl', function($scope, $state) {
+.controller('SignInCtrl', function($scope, $state, $rootScope) {
   
   $scope.signIn = function(user) {
     console.log('Sign-In', user);
+    $rootScope.hideTabs = ''; //munculin tab
     $state.go('tab.dash');
   };
   
 })
 
-.controller('DashCtrl', function($scope, $state, $rootScope) {
+.controller('DashCtrl', function($scope, $state, $rootScope, $ionicPlatform) {
   $rootScope.hideTabs = '';
   $scope.swipechats = function(){
+    $rootScope.hideTabs = 'tabs-item-hide'; //hide tab
     $state.go('tab.chats');
   };
+  $ionicPlatform.registerBackButtonAction(function (event) {
+    if($state.current.name=="tab.dash"){
+      navigator.app.exitApp();
+    }
+    else if ($state.current.name=="tab.chats") {
+      navigator.app.backHistory();
+    }
+    else if ($state.current.name=="tab.search") {
+      navigator.app.backHistory();
+    }
+    else if ($state.current.name=="tab.mother") {
+      navigator.app.backHistory();
+    }
+    else if ($state.current.name=="setting") {
+      navigator.app.backHistory();
+    }
+    else {
+      event.preventDefault();
+    }
+  }, 100);
 })
 
-.controller('FamilyCtrl', function($scope, $state, $location, $ionicPopup, $rootScope, $sce) {
-  $scope.sources = [
-    {src: $sce.trustAsResourceUrl("/video/mother.mov"), type: "video/mov"}
-  ]
+.controller('BeginnerCtrl', function($scope, $state, $rootScope) {
+  $rootScope.hideTabs = 'tabs-item-hide';
+  $scope.gotoMain = function() {
+    $rootScope.hideTabs = '';
+    $state.go('tab.dash');
+  }
+})
 
+.controller('FamilyOneCtrl', function($scope, $rootScope) {
+  $scope.score = $rootScope.value;
+})
+
+.controller('FamilyCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
   $scope.showAlert = function() {
     $scope.data = {}
     var ans = $scope.radioValue
@@ -74,7 +105,6 @@ angular.module('starter.controllers', [])
 
     if (ans == "Father") {
       $rootScope.value+=50;
-      // alert($rootScope.value)
       $ionicPopup.alert({
         title: 'Result',
         templateUrl : 'popup-template-correct.html',
@@ -117,8 +147,11 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ChatsCtrl', function($scope, $state, $rootScope) {
+  $rootScope.user = {
+    username : ""
+  }
+  $rootScope.hideTabs = '';
   $scope.score = $rootScope.value;
-  console.log('oochats')
   $scope.swipedash = function(){
     $state.go('tab.dash');
   };
@@ -127,7 +160,8 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('SearchCtrl', function($scope, $state, Searches) {
+.controller('SearchCtrl', function($scope, $state, Searches, $rootScope) {
+  $rootScope.hideTabs = '';
   $scope.swipechats = function(){
     $state.go('tab.chats');
   };
@@ -148,10 +182,15 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('SettingCtrl', function($scope, $state) {
+.controller('SettingCtrl', function($scope, $state, $rootScope, $ionicHistory) {
   $scope.settings = {
     enableReminder: true
   };
+
+  $scope.goBack = function(){
+    $rootScope.hideTabs = '';
+    $ionicHistory.goBack();
+  }
 
   $scope.timePickerObject = {
     inputEpochTime: ((new Date()).getHours() * 60 * 60),  //Optional
@@ -254,13 +293,17 @@ angular.module('starter.controllers', [])
   });
 })
 
-.controller('PopCtrl', function($scope, $ionicPopover) {
+.controller('PopCtrl', function($scope, $ionicPopover, $ionicHistory) {
 
   $ionicPopover.fromTemplateUrl('templates/popover.html', {
     scope: $scope,
   }).then(function(popover) {
     $scope.popover = popover;
   });
+
+  $scope.myGoBack = function() {
+    $ionicHistory.goBack();
+  };
 
   $scope.demo = 'ios';
   $scope.setPlatform = function(p) {
@@ -272,8 +315,13 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('SearchDetailCtrl', function($scope, $stateParams, Searches) {
+.controller('SearchDetailCtrl', function($scope, $state, $stateParams, Searches, $rootScope, $ionicHistory) {
   $scope.search = Searches.get($stateParams.searchId);
+
+  $scope.goBackSearch = function(){
+    $rootScope.hideTabs = '';
+    $state.go('tab.search')
+  }
 })
 
 .controller('SwitchCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
@@ -916,4 +964,9 @@ angular.module('starter.controllers', [])
 
 .controller('FinishCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
   $scope.score = $rootScope.value;
+  $rootScope.hideTabs = 'tabs-item-hide';
+  $scope.quit = function () {
+    $state.go('tab.dash');
+    $rootScope.hideTabs = '';
+  }
 });

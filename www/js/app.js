@@ -62,7 +62,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       url: '/beginner',
       views: {
         'tab-dash': {
-          templateUrl: 'templates/beginner.html'
+          templateUrl: 'templates/beginner.html',
+          controller: 'BeginnerCtrl'
         }
       }
     })
@@ -80,7 +81,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         url: '/family-1',
         views: {
           'tab-dash': {
-            templateUrl: 'templates/family-1.html'
+            templateUrl: 'templates/family-1.html',
+            controller: 'FamilyOneCtrl'
           }
         }
       })

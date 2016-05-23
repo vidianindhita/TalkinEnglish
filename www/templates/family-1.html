@@ -7,7 +7,7 @@
 		<div class="row">
 			<div id="score-0">
 				<div class="button button-outline circle-score button-energized button-small" ng-click="openModalScore()" ng-controller='ModalScoreCtrl'>
-					<p>0</p>
+					<p>{{score}}</p>
 				</div>
 			</div>
 		</div>
@@ -23,7 +23,7 @@
 			<button ng-click="openModal()" ng-controller='ModalCtrl' class="button button-clear"><img src="img/sign-button.png"></button>
 		</div>
 		<div data-tap-disable="true" class="lip-reading-vid">
-      <video ng-src="/android_asset/www/video/mother.mp4" width="310" controls="" autoplay="" type="video/mp4" loop=""></video>
+      <video ng-src="/android_asset/www/video/mother.mp4" width="310" height="220" controls="" autoplay="" type="video/mp4"></video>
     </div>
 		<div class="button-next">
 			<a class="button button-block button-balanced" ng-href="#/tab/family-2">NEXT  <i class="ion-ios-arrow-forward"></i></a>
