@@ -4,7 +4,7 @@
 			<a class="icon ion-android-close close-button" ng-href="#/tab/beginner"></a>
 			<progress max="100" value="88"></progress>
 		</div>
-		<div class="row">
+		<div class="row family-23">
 			<div id="score-0">
 				<div class="button button-outline circle-score button-energized button-small" ng-click="openModalScore()" ng-controller='ModalScoreCtrl'>
 					<p>{{score}}</p>
@@ -13,10 +13,14 @@
 		</div>
 		<div ng-switch="content">
 			<div class="row" ng-switch-default id="score-1-fam23">
-				<img src="img/mother-review-big.png" id="img-motherreview">	
-				<button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
-					<img src="img/home-icon.png">
-				</button>
+				<div class="col col-75">
+					<img src="img/mother-review-big.png" id="img-motherreview">	
+				</div>
+				<div class="col">
+					<button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+						<img src="img/home-icon.png">
+					</button>
+				</div>
 			</div>
 		</div>
 		<div class="sub-word" id="fam-23">
