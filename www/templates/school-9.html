@@ -13,8 +13,8 @@
 		</div>
 		<div ng-switch="content">
       <div class="row" ng-switch-default id="score-1-fam11">
-        <div class="col col-75">
-          <img src="video/she-is-a-mother.gif" id="img-lipread">    
+        <div class="col col-80">
+          <img src="video/write.gif" id="img-lipread">    
         </div>
         <div class="col">
           <button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
@@ -36,25 +36,25 @@
     <!-- Selectable Answer -->
     <div class="row" radio-group id="cards-choice-1">
       <div class="col col-50">
-        <ion-radio class="card" id="card-a-fam11" icon="ion-checkmark" ng-model="$parent.radioValue" name="choiceId" value="watching">
-          <p>Watching</p>
+        <ion-radio class="card" id="card-a-fam11" icon="ion-checkmark" ng-model="$parent.radioValue" name="choiceId" value="watch">
+          <p>Watch</p>
         </ion-radio>
       </div>
       <div class="col col-50">
-        <ion-radio class="card" id="card-b-fam11" icon="ion-checkmark" ng-model="$parent.radioValue" name="choiceId" value="writing">
-          <p>Writing</p>
+        <ion-radio class="card" id="card-b-fam11" icon="ion-checkmark" ng-model="$parent.radioValue" name="choiceId" value="write">
+          <p>Write</p>
         </ion-radio>
       </div>
     </div>
     <div class="row" radio-group>
       <div class="col col-50">
-        <ion-radio class="card" id="card-c-fam11" icon="ion-checkmark" ng-model="$parent.radioValue" name="choiceId" value="looking">
-          <p>Looking</p>
+        <ion-radio class="card" id="card-c-fam11" icon="ion-checkmark" ng-model="$parent.radioValue" name="choiceId" value="look">
+          <p>Look</p>
         </ion-radio>
       </div>
       <div class="col col-50">
-        <ion-radio class="card" id="card-d-fam11" icon="ion-checkmark" ng-model="$parent.radioValue" name="choiceId" value="learning">
-          <p>Learning</p>
+        <ion-radio class="card" id="card-d-fam11" icon="ion-checkmark" ng-model="$parent.radioValue" name="choiceId" value="learn">
+          <p>Learn</p>
         </ion-radio>
       </div>
     </div>
@@ -135,7 +135,7 @@
     </div>
     <div class="text-center image-incorrect">
       Your answer is <b>{{radioValue}}</b>. It should be:<br>
-      <h3>Writing</h3>      
+      <h3>Write</h3>      
     </div>
   </div>
 </script>

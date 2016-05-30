@@ -155,6 +155,13 @@ $dark:							  #4c4c4c !default;
     background-size: cover;
 }
 
+.review-school {
+    background: url("../img/review-school.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
 #card-home1 {
 	padding-top: 14px;
 	padding-bottom: 14px;
@@ -409,7 +416,7 @@ ul .custom-nav {
 	padding-bottom: 0px;
 	
 	img {
-		margin-left: 26px;
+		margin-left: 24px;
 		width: 40px;
 		height: 40px;
 	}
@@ -1134,6 +1141,134 @@ ul .custom-nav {
 	}
 }
 
+#school-27-teacher {
+	.circle-score {
+		color: $energized;
+		font-weight: bold;
+		font-size: 12px;
+		margin-left: 120px;
+		margin-bottom: 5px;
+		border: 3px solid;
+		border-radius: 50%;
+		width: 35px;
+		height: 35px;
+	}
+
+	img {
+		margin-left: 113px;
+		width: 40px;
+		height: 40px;
+	}
+
+	input[type=checkbox] {
+		display:none;
+	}
+
+	input[type=checkbox] + label {
+		background: url("../img/teacher-review.png");
+		height: 80px;
+		width: 62px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		margin-left: 93px;
+		margin-top: 97px;
+	}
+
+	input[type=checkbox]:checked + label {
+		background: url("../img/teacher-review-done.png");
+		height: 80px;
+		width: 62px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		margin-left: 93px;
+		margin-top: 97px;
+	}
+}
+
+#school-27-student {
+	margin-top: 3px;
+	margin-left: 80px;
+	margin-bottom: 10px;
+	
+	input[type=checkbox] {
+		display:none;
+	}
+
+	input[type=checkbox] + label {
+		background: url("../img/student-review.png");
+		height: 70px;
+		width: 53px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+
+	input[type=checkbox]:checked + label {
+		background: url("../img/student-review-done.png");
+		height: 70px;
+		width: 53px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+}
+
+#school-27-study {
+	input[type=checkbox] {
+		display:none;
+	}
+
+	input[type=checkbox] + label {
+		background: url("../img/study-review.png");
+		height: 50px;
+		width: 43px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		margin-left: 5px;
+		margin-top: 20px;
+	}
+
+	input[type=checkbox]:checked + label {
+		background: url("../img/study-review-done.png");
+		height: 50px;
+		width: 43px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		margin-left: 5px;
+		margin-top: 20px;
+	}
+}
+
+#school-27-whiteboard {
+	padding-bottom: 0px;
+
+	input[type=checkbox] {
+		display:none;
+	}
+
+	input[type=checkbox] + label {
+		background: url("../img/whiteboard-review.png");
+		height: 42px;
+		width: 45px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		margin-left: 19px;
+		margin-top: 80px;
+	}
+
+	input[type=checkbox]:checked + label {
+		background: url("../img/whiteboard-review-done.png");
+		height: 42px;
+		width: 45px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		margin-left: 19px;
+		margin-top: 80px;
+	}
+}
+
 #score-1-fam23 {
 
 	padding-bottom: 0px;
@@ -1592,9 +1727,9 @@ ul .custom-nav {
 
 .background {
 	background-color: $positive; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
 
   .gotoreview-content {
 		margin-top: 170px;
@@ -1620,11 +1755,57 @@ ul .custom-nav {
 	}
 }
 
+.background-red {
+	background-color: $assertive;
+}
+
+.finish-school {
+	background-color: $assertive;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+
+  .gotoreview-content {
+		margin-top: 60px;
+		margin-bottom: 20px;
+
+		i {
+			color: white;
+			font-size: 104px;
+		}
+
+		h3 {
+			color: white;
+			margin-bottom: 25px;
+		}
+
+		p {
+			color: white;
+			font-size: 16px;
+			margin-top: 20px;
+		}
+
+		h2 {
+			color: white;
+			font-size: 60px;
+		}
+
+		img {
+			width: 130px;
+			height: 130px;
+		}
+	}
+
+	.button-next {
+		color: $positive;
+	}
+}
+
 .finish {
 	background-color: $energized; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
 
   .gotoreview-content {
 		margin-top: 60px;

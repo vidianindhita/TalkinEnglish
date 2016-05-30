@@ -26,7 +26,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
 
-  $ionicConfigProvider.views.maxCache(30);
+  $ionicConfigProvider.views.maxCache(50);
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
@@ -502,6 +502,166 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
           'tab-dash': {
             templateUrl: 'templates/school-16.html',
             controller: 'SchoolSixteenCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-17', {
+        url: '/school-17',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-17.html',
+            controller: 'SchoolSeventeenCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-18', {
+        url: '/school-18',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-18.html',
+            controller: 'SchoolEightteenCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-19', {
+        url: '/school-19',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-19.html',
+            controller: 'SchoolNineteenCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-20', {
+        url: '/school-20',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-20.html',
+            controller: 'SchoolTwentyCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-21', {
+        url: '/school-21',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-21.html',
+            controller: 'SchoolTwentyOneCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-22', {
+        url: '/school-22',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-22.html',
+            controller: 'SchoolTwentyTwoCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-23', {
+        url: '/school-23',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-23.html',
+            controller: 'SchoolTwentyThreeCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-24', {
+        url: '/school-24',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-24.html',
+            controller: 'SchoolTwentyFourCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-25', {
+        url: '/school-25',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-25.html',
+            controller: 'SchoolTwentyFiveCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-26', {
+        url: '/school-26',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-26.html',
+            controller: 'SchoolTwentySixCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-27', {
+        url: '/school-27',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-27.html',
+            controller: 'SchoolTwentySevenCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-28', {
+        url: '/school-28',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-28.html',
+            controller: 'SchoolTwentyEightCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-29', {
+        url: '/school-29',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-29.html',
+            controller: 'SchoolTwentyNineCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-30', {
+        url: '/school-30',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-30.html',
+            controller: 'SchoolThirtyCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-31', {
+        url: '/school-31',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-31.html',
+            controller: 'SchoolThirtyOneCtrl'
+          }
+        }
+      })
+
+      .state('tab.school-32', {
+        url: '/school-32',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/school-32.html',
+            controller: "SchoolFinishCtrl"
           }
         }
       })

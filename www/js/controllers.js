@@ -953,7 +953,7 @@ angular.module('starter.controllers', [])
 
     var ans = $scope.radioValue
 
-    if (ans == "writing") {
+    if (ans == "write") {
       $rootScope.value+=50;
       $ionicPopup.alert({
         title: 'Result',
@@ -1223,6 +1223,464 @@ angular.module('starter.controllers', [])
   };
 })
 
+.controller('SchoolSeventeenCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSchoolSevenTeenAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "student") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-18");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-18");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SchoolEightteenCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSchoolEightTeenAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "teacher") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-19");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-19");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SchoolNineteenCtrl', function($scope, $rootScope) {
+  $scope.score = $rootScope.value;
+})
+
+.controller('SchoolTwentyCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+  $scope.showSchoolTwentyAlert = function() {
+    $scope.data = {}
+    var ans = $scope.radioValue
+
+    if (ans == "Study") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-21");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+        console.log(ans);
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-21");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+        console.log(ans);
+      });
+    }
+  };
+})
+
+.controller('SchoolTwentyOneCtrl', function($scope, $rootScope) {
+  $scope.score = $rootScope.value;
+})
+
+.controller('SchoolTwentyTwoCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showContent = function( index ) {
+    $scope.content = ( "content-" + index );
+  };
+
+  $scope.showSchoolTwentyTwoAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "studied") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-23");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-23");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SchoolTwentyThreeCtrl', function($scope, $rootScope) {
+  $scope.score = $rootScope.value;
+})
+
+.controller('SchoolTwentyFourCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showContent = function( index ) {
+    $scope.content = ( "content-" + index );
+  };
+
+  $scope.showSchoolTwentyFourAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "will study") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-25");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-25");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SchoolTwentyFiveCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSchoolTwentyFiveAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "study") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-26");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-26");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SchoolTwentySixCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+})
+
+.controller('SchoolTwentySevenCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+})
+
+.controller('SchoolTwentyEightCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSchoolTwentyEightAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "Teacher") {
+      $rootScope.value+=70;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-27");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-27");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SchoolTwentyNineCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSchoolTwentyNineAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "Student") {
+      $rootScope.value+=70;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-27");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-27");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SchoolThirtyCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSchoolThirtyAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "Study") {
+      $rootScope.value+=70;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-27");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-27");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SchoolThirtyOneCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSchoolThirtyOneAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "Whiteboard") {
+      $rootScope.value+=70;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-27");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-energized',
+          onTap: function(e) {
+            $location.path("/tab/school-27");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
 .controller('ReviewCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
   $scope.score = $rootScope.value;
 })
@@ -1400,6 +1858,15 @@ angular.module('starter.controllers', [])
 })
 
 .controller('FinishCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+  $rootScope.hideTabs = 'tabs-item-hide';
+  $scope.quit = function () {
+    $state.go('tab.dash');
+    $rootScope.hideTabs = '';
+  }
+})
+
+.controller('SchoolFinishCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
   $scope.score = $rootScope.value;
   $rootScope.hideTabs = 'tabs-item-hide';
   $scope.quit = function () {
