@@ -666,6 +666,76 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       })
 
+    .state('tab.advance', {
+      url: '/advance',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/advance.html',
+          controller: 'AdvanceCtrl'
+        }
+      }
+    })
+
+      .state('tab.supermarket-1', {
+        url: '/supermarket-1',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-1.html',
+            controller: 'SupermarketOneCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-2', {
+        url: '/supermarket-2',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-2.html',
+            controller: 'SupermarketTwoCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-3', {
+        url: '/supermarket-3',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-3.html',
+            controller: 'SupermarketThreeCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-4', {
+        url: '/supermarket-4',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-4.html',
+            controller: 'SupermarketFourCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-5', {
+        url: '/supermarket-5',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-5.html',
+            controller: 'SupermarketFiveCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-6', {
+        url: '/supermarket-6',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-6.html',
+            controller: 'SupermarketSixCtrl'
+          }
+        }
+      })
+
   .state('tab.chats', {
       url: '/chats',
       views: {

@@ -270,6 +270,18 @@ $dark:							  #4c4c4c !default;
 	}
 }
 
+#sublevel-advance-1, #sublevel-advance-2, #sublevel-advance-3, #sublevel-advance-4, #sublevel-advance-5, #sublevel-advance-6, #sublevel-advance-7 {
+	border-width: 0px;
+
+	img {
+		width: 80px;
+	}
+
+	p {
+		color: $assertive;
+	}
+}
+
 #avatar-profile {
 	border-width: 0px;
 	padding-top: 25px;
@@ -388,6 +400,36 @@ ul .custom-nav {
 	}
 }
 
+#status-bar-level-advance {
+	padding-bottom: 0px;
+
+	progress[value] {
+	  width: 299px;
+	  height: 3px;
+	  -webkit-appearance: none;
+	  appearance: none;
+	  margin-top: 11px;
+	}
+
+	progress[value]::-webkit-progress-bar {
+		width: 299px;
+	  height: 3px;
+		background-color: $stable;
+	}
+
+	progress[value]::-webkit-progress-value {
+		width: 299px;
+	  height: 3px;
+		background-color: $assertive;  
+	}
+
+	progress[value]::-moz-progress-bar {
+		width: 299px;
+	  height: 3px;
+		background-color: $assertive;
+	}
+}
+
 #score-0 {
 	.circle-score {
 		color: $energized;
@@ -423,7 +465,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -439,7 +481,7 @@ ul .custom-nav {
 
 	h3 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -455,7 +497,7 @@ ul .custom-nav {
 
 	h3 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -475,7 +517,7 @@ ul .custom-nav {
 
 	h3 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -495,7 +537,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -515,7 +557,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -535,7 +577,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -555,7 +597,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -575,7 +617,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -595,7 +637,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -615,7 +657,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -635,7 +677,7 @@ ul .custom-nav {
 
 	h3 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -655,7 +697,7 @@ ul .custom-nav {
 
 	h3 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -675,7 +717,7 @@ ul .custom-nav {
 
 	h3 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -695,7 +737,7 @@ ul .custom-nav {
 
 	h3 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -715,7 +757,7 @@ ul .custom-nav {
 
 	h3 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -735,7 +777,7 @@ ul .custom-nav {
 
 	h3 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -755,7 +797,7 @@ ul .custom-nav {
 
 	h3 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -775,7 +817,7 @@ ul .custom-nav {
 
 	h3 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -801,7 +843,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -821,7 +863,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 		font-size: 20px;
 	}
 }
@@ -842,7 +884,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 		font-size: 20px;
 	}
 }
@@ -863,7 +905,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 		font-size: 20px;
 	}
 }
@@ -884,7 +926,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 		font-size: 20px;
 	}
 }
@@ -905,7 +947,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 		font-size: 20px;
 	}
 }
@@ -926,7 +968,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 		font-size: 20px;
 	}
 }
@@ -986,7 +1028,7 @@ ul .custom-nav {
 
 	h3 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 	}
 }
 
@@ -1006,7 +1048,7 @@ ul .custom-nav {
 
 	h3, h4 {
 		color: $assertive;
-		margin-left: 7px;
+		margin-left: 5px;
 		font-size: 20px;
 	}
 }
@@ -1291,7 +1333,7 @@ ul .custom-nav {
 
 	h3 {
 		color: $assertive;
-		margin-left: 10px;
+		margin-left: 5px;
 	}
 }
 
