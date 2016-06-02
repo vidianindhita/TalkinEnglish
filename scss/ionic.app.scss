@@ -162,6 +162,14 @@ $dark:							  #4c4c4c !default;
     background-size: cover;
 }
 
+.review-supermarket {
+    background: url("../img/review-supermarket.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+
 #card-home1 {
 	padding-top: 14px;
 	padding-bottom: 14px;
@@ -535,7 +543,7 @@ ul .custom-nav {
 		height: 40px;
 	}
 
-	h3, h4 {
+	h3, h4, h5 {
 		color: $assertive;
 		margin-left: 5px;
 	}
@@ -555,7 +563,7 @@ ul .custom-nav {
 		height: 40px;
 	}
 
-	h3, h4 {
+	h3, h4, h5 {
 		color: $assertive;
 		margin-left: 5px;
 	}
@@ -575,7 +583,7 @@ ul .custom-nav {
 		height: 40px;
 	}
 
-	h3, h4 {
+	h3, h4, h5 {
 		color: $assertive;
 		margin-left: 5px;
 	}
@@ -595,7 +603,7 @@ ul .custom-nav {
 		height: 40px;
 	}
 
-	h3, h4 {
+	h3, h4, h5 {
 		color: $assertive;
 		margin-left: 5px;
 	}
@@ -615,7 +623,7 @@ ul .custom-nav {
 		height: 40px;
 	}
 
-	h3, h4 {
+	h3, h4, h5 {
 		color: $assertive;
 		margin-left: 5px;
 	}
@@ -635,7 +643,7 @@ ul .custom-nav {
 		height: 40px;
 	}
 
-	h3, h4 {
+	h3, h4, h5 {
 		color: $assertive;
 		margin-left: 5px;
 	}
@@ -1311,6 +1319,106 @@ ul .custom-nav {
 	}
 }
 
+#supermarket-25-purchase {
+	padding-bottom: 0px;
+
+	input[type=checkbox] {
+		display:none;
+	}
+
+	input[type=checkbox] + label {
+		background: url("../img/purchase-review.png");
+		height: 38px;
+		width: 50px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		margin-left: 2px;
+		margin-top: 20px;
+	}
+
+	input[type=checkbox]:checked + label {
+		background: url("../img/purchase-review-done.png");
+		height: 38px;
+		width: 50px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		margin-left: 2px;
+		margin-top: 20px;
+	}
+}
+
+#supermarket-25-apparel {
+	.circle-score {
+		color: $energized;
+		font-weight: bold;
+		font-size: 12px;
+		margin-left: 120px;
+		margin-bottom: 5px;
+		border: 3px solid;
+		border-radius: 50%;
+		width: 35px;
+		height: 35px;
+	}
+
+	img {
+		margin-left: 113px;
+		width: 40px;
+		height: 40px;
+	}
+
+	input[type=checkbox] {
+		display:none;
+	}
+
+	input[type=checkbox] + label {
+		background: url("../img/apparel-review.png");
+		height: 43px;
+		width: 40px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		margin-left: 93px;
+		margin-top: 8px;
+	}
+
+	input[type=checkbox]:checked + label {
+		background: url("../img/apparel-review-done.png");
+		height: 43px;
+		width: 40px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		margin-left: 93px;
+		margin-top: 8px;
+	}
+}
+
+#supermarket-25-beverage {
+	input[type=checkbox] {
+		display:none;
+	}
+
+	input[type=checkbox] + label {
+		background: url("../img/beverage-review.png");
+		height: 37px;
+		width: 36px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		margin-left: 12px;
+		margin-top: 89px;
+		margin-bottom: 100px;
+	}
+
+	input[type=checkbox]:checked + label {
+		background: url("../img/beverage-review-done.png");
+		height: 37px;
+		width: 36px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		margin-left: 12px;
+		margin-top: 89px;
+		margin-bottom: 100px;
+	}
+}
+
 #score-1-fam23 {
 
 	padding-bottom: 0px;
@@ -1340,7 +1448,7 @@ ul .custom-nav {
 
 .sub-word {
 	
-	h5	{
+	h5, h6	{
 		margin-top: 0px;
 		margin-left: 15px;
 	}
@@ -1353,6 +1461,10 @@ ul .custom-nav {
 		width: 40px;
 		height: 40px;
 		margin-left: 3px;
+	}
+
+	#no-sign-language {
+		margin-bottom: 60px;
 	}
 }
 
@@ -1801,8 +1913,54 @@ ul .custom-nav {
 	background-color: $assertive;
 }
 
+.background-yellow {
+	background-color: $energized;
+}
+
 .finish-school {
 	background-color: $assertive;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+
+  .gotoreview-content {
+		margin-top: 60px;
+		margin-bottom: 20px;
+
+		i {
+			color: white;
+			font-size: 104px;
+		}
+
+		h3 {
+			color: white;
+			margin-bottom: 25px;
+		}
+
+		p {
+			color: white;
+			font-size: 16px;
+			margin-top: 20px;
+		}
+
+		h2 {
+			color: white;
+			font-size: 60px;
+		}
+
+		img {
+			width: 130px;
+			height: 130px;
+		}
+	}
+
+	.button-next {
+		color: $positive;
+	}
+}
+
+.finish-supermarket {
+	background-color: $balanced;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	background-size: cover;
@@ -2029,6 +2187,24 @@ ul .custom-nav {
 .show-score {
 	color: $energized;
 	font-size: 40px;
+}
+
+.dialogue {
+	margin-left: 17px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.dialogue-text {
+	margin-left: 17px;
+	margin-top: 50px;
+	margin-bottom: 125px;
+}
+
+.question-supermarket-dialogue {
+	h4 {
+		margin-left: 17px;
+	}
 }
 
 // Include all of Ionic

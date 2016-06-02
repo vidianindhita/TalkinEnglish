@@ -1830,6 +1830,691 @@ angular.module('starter.controllers', [])
   };
 })
 
+.controller('SupermarketSevenCtrl', function($scope, $rootScope) {
+  $scope.score = $rootScope.value;
+})
+
+.controller('SupermarketEightCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showContent = function( index ) {
+    $scope.content = ( "content-" + index );
+  };
+
+  $scope.showSupermarketEightAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "purchase") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-9");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-9");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SupermarketNineCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSupermarketNineAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "purchase") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-10");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-10");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SupermarketTenCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showContent = function( index ) {
+    $scope.content = ( "content-" + index );
+  };
+
+  $scope.showSupermarketTenAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "besides") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-11");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-11");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SupermarketElevenCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSupermarketElevenAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "apparel") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-12");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-12");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SupermarketTwelveCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSupermarketTwelveAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "beverage") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-13");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-13");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SupermarketThirteenCtrl', function($scope, $rootScope) {
+  $scope.score = $rootScope.value;
+})
+
+.controller('SupermarketFourteenCtrl', function($scope, $rootScope) {
+  $scope.score = $rootScope.value;
+})
+
+.controller('SupermarketFifteenCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSupermarketFifteenAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "extravagant") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-16");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-16");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SupermarketSixteenCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSupermarketSixteenAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "bargain") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-17");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-17");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SupermarketSeventeenCtrl', function($scope, $rootScope) {
+  $scope.score = $rootScope.value;
+})
+
+.controller('SupermarketEightteenCtrl', function($scope, $rootScope) {
+  $scope.score = $rootScope.value;
+})
+
+.controller('SupermarketNineteenCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSupermarketNineteenAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "cheap") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-20");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-20");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SupermarketTwentyCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSupermarketTwentyAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "necessary") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-21");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-21");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SupermarketTwentyOneCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showContent = function( index ) {
+    $scope.content = ( "content-" + index );
+  };
+
+  $scope.showSupermarketTwentyOneAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "bargained") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-22");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-22");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SupermarketTwentyTwoCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSupermarketTwentyTwoAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "extravagant") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-23");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-23");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SupermarketTwentyThreeCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSupermarketTwentyThreeAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "necessary") {
+      $rootScope.value+=50;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-24");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-24");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SupermarketTwentyFourCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+})
+
+.controller('SupermarketTwentyFiveCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+})
+
+.controller('SupermarketTwentySixCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSupermarketTwentySixAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "Purchase") {
+      $rootScope.value+=70;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-25");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-25");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SupermarketTwentySevenCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSupermarketTwentySevenAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "Apparel") {
+      $rootScope.value+=70;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-25");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-25");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
+.controller('SupermarketTwentyEightCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+
+  $scope.showSupermarketTwentyEightAlert = function() {
+    $scope.data = {}
+
+    var ans = $scope.radioValue
+
+    if (ans == "Beverage") {
+      $rootScope.value+=70;
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-correct.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-25");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    } else {
+      $ionicPopup.alert({
+        title: 'Result',
+        templateUrl : 'popup-template-incorrect.html',
+        scope: $scope,
+        buttons: [{
+          text: 'Next',
+          type: 'button-assertive',
+          onTap: function(e) {
+            $location.path("/tab/supermarket-25");
+          }
+        }]
+      }).then(function(res) {
+        console.log('This is the answer');
+      });
+    }
+  };
+})
+
 .controller('ReviewCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
   $scope.score = $rootScope.value;
 })
@@ -2016,6 +2701,15 @@ angular.module('starter.controllers', [])
 })
 
 .controller('SchoolFinishCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
+  $scope.score = $rootScope.value;
+  $rootScope.hideTabs = 'tabs-item-hide';
+  $scope.quit = function () {
+    $state.go('tab.dash');
+    $rootScope.hideTabs = '';
+  }
+})
+
+.controller('SupermarketFinishCtrl', function($scope, $state, $location, $ionicPopup, $rootScope) {
   $scope.score = $rootScope.value;
   $rootScope.hideTabs = 'tabs-item-hide';
   $scope.quit = function () {

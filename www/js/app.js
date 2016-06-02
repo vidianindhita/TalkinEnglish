@@ -736,6 +736,236 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       })
 
+      .state('tab.supermarket-7', {
+        url: '/supermarket-7',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-7.html',
+            controller: 'SupermarketSevenCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-8', {
+        url: '/supermarket-8',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-8.html',
+            controller: 'SupermarketEightCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-9', {
+        url: '/supermarket-9',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-9.html',
+            controller: 'SupermarketNineCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-10', {
+        url: '/supermarket-10',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-10.html',
+            controller: 'SupermarketTenCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-11', {
+        url: '/supermarket-11',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-11.html',
+            controller: 'SupermarketElevenCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-12', {
+        url: '/supermarket-12',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-12.html',
+            controller: 'SupermarketTwelveCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-13', {
+        url: '/supermarket-13',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-13.html',
+            controller: 'SupermarketThirteenCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-14', {
+        url: '/supermarket-14',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-14.html',
+            controller: 'SupermarketFourteenCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-15', {
+        url: '/supermarket-15',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-15.html',
+            controller: 'SupermarketFifteenCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-16', {
+        url: '/supermarket-16',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-16.html',
+            controller: 'SupermarketSixteenCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-17', {
+        url: '/supermarket-17',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-17.html',
+            controller: 'SupermarketSeventeenCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-18', {
+        url: '/supermarket-18',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-18.html',
+            controller: 'SupermarketEightteenCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-19', {
+        url: '/supermarket-19',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-19.html',
+            controller: 'SupermarketNineteenCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-20', {
+        url: '/supermarket-20',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-20.html',
+            controller: 'SupermarketTwentyCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-21', {
+        url: '/supermarket-21',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-21.html',
+            controller: 'SupermarketTwentyOneCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-22', {
+        url: '/supermarket-22',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-22.html',
+            controller: 'SupermarketTwentyTwoCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-23', {
+        url: '/supermarket-23',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-23.html',
+            controller: 'SupermarketTwentyThreeCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-24', {
+        url: '/supermarket-24',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-24.html',
+            controller: 'SupermarketTwentyFourCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-25', {
+        url: '/supermarket-25',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-25.html',
+            controller: 'SupermarketTwentyFiveCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-26', {
+        url: '/supermarket-26',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-26.html',
+            controller: 'SupermarketTwentySixCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-27', {
+        url: '/supermarket-27',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-27.html',
+            controller: 'SupermarketTwentySevenCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-28', {
+        url: '/supermarket-28',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-28.html',
+            controller: 'SupermarketTwentyEightCtrl'
+          }
+        }
+      })
+
+      .state('tab.supermarket-29', {
+        url: '/supermarket-29',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/supermarket-29.html',
+            controller: 'SupermarketFinishCtrl'
+          }
+        }
+      })
+
   .state('tab.chats', {
       url: '/chats',
       views: {
