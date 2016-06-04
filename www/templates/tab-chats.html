@@ -7,9 +7,8 @@
     </div>
     <div>
       <label class="item item-input" id="custom-input">
-        <input type="text" placeholder="Your Name" class="text-center" id="custom-placeholder">
+        <input type="text" value={{usernameglobal}} placeholder="Your Name" class="text-center" id="custom-placeholder">
       </label>
-      <p>{{user.username}}</p>
     </div>
     <button class="button button-block button-energized" id="button-profile"><i class="ion-edit"></i>
       CHANGE
@@ -17,7 +16,7 @@
     <div class="score">
       <h5 class="text-center">Your score is<br><br></h5>
       <div class="show-score text-center">
-        {{score}}
+        {{value}}
       </div>
     </div>
     <div class="badges-content">

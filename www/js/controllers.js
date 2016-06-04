@@ -3,9 +3,10 @@ angular.module('starter.controllers', [])
 .controller('SignInCtrl', function($scope, $state, $rootScope) {
   
   $scope.signIn = function(user) {
-    console.log('Sign-In', user);
+    console.log('Sign-In', user.username);
     $rootScope.hideTabs = ''; //munculin tab
     $state.go('tab.dash');
+    $rootScope.usernameglobal = user.username
   };
   
 })
