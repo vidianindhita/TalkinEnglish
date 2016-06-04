@@ -163,11 +163,14 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ChatsCtrl', function($scope, $state, $rootScope) {
+  console.log("halo")
   $rootScope.user = {
     username : ""
   }
   $rootScope.hideTabs = '';
   $scope.score = $rootScope.value;
+  console.log ($rootScope.value)
+  console.log($scope.score)
   $scope.swipedash = function(){
     $state.go('tab.dash');
   };
